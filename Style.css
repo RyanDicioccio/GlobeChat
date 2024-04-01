@@ -1,0 +1,179 @@
+html {
+    height: 100%;
+}
+
+.share-tech mono-regular {
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.merriweather-light {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.merriweather-bold {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.merriweather-black {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.merriweather-light-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.merriweather-regular-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.merriweather-bold-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.merriweather-black-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+body {
+    background: linear-gradient(360deg, #9f025E, #F9C929);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+
+}
+
+.TitleName {
+    text-align: center;
+    border-radius: 50px;
+    height: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: "Share Tech Mono", monospace;
+
+
+}
+
+h3 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+}
+
+.MainInfo {
+    position: sticky;
+    overflow: auto;
+    height: 300px;
+    height: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(100px);
+    border: black solid 5px;
+    height: 85%;
+    font-family: "Merriweather", serif;
+
+}
+
+.Buttons {
+    position: absolute;
+    top: 2%;
+    right: 4%;
+    z-index: 9999;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#SignUp {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 10%;
+    height: 40px;
+    width: 130px;
+}
+
+#Login {
+    background-color: #007FFF;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    height: 40px;
+    width: 130px;
+    margin-top: 5px;
+}
+
+.LoginWrapper {
+    width: 80%;
+    max-width: 50%;
+    height: 65%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 24%;
+    margin-right: 24%;
+
+
+
+
+}
+
+.textfield input {
+    display: block;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    height: 20px;
+    width: 95%;
+
+}
+
+.textfield label {
+    font-size: 17px;
+}
+
+.BTN {
+    display: flex;
+    justify-content: center;
+}
+
+#LoginBtn {
+    background: linear-gradient(90deg, #9f025E, #F9C929);
+    color: white;
+    border: none;
+    border-radius: 10%;
+    height: 40px;
+    width: 130px;
+    margin-top: 5px;
+}
