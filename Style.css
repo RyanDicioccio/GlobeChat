@@ -255,6 +255,8 @@ text-align: center;
     width: 85%;
     height: 65%;
     backdrop-filter: blur(100px);
+    overflow-y: auto;
+
     
 
   }
