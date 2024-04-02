@@ -1,3 +1,3 @@
-function changeWallpaper(imageUrl) {
-    document.getElementById('wallpaper').style.backgroundImage = `url(${imageUrl})`;
-  }
+function changeWallpaper(imagePath) {
+  document.body.style.backgroundImage = 'url(' + imagePath + ')';
+}

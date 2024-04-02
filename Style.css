@@ -218,6 +218,8 @@ text-align: center;
     background-size: cover;
     background-position: center;
   }
+
+
   
   .wallpaperMenu {
     position: fixed;
@@ -229,6 +231,44 @@ text-align: center;
   .wallpaperMenu button {
     margin-right: 10px;
     border-radius: 25%;
+    border: none;
+  }
+
+  h4{
+    color: white;
+  }
+
+  .ChatWrapper{
+
+    width: 100%;
+    height: 100%;
+   
+
+  }
+
+  .ChatBox{
+
+    position: fixed;
+    margin-left: 7%;
+    margin-top: 10%;
+    border: black solid 7px;
+    width: 85%;
+    height: 65%;
+    backdrop-filter: blur(100px);
+    
+
+  }
+
+  #TextChat{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
   }
 
 
