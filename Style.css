@@ -145,9 +145,6 @@ p {
     margin-left: 24%;
     margin-right: 24%;
 
-
-
-
 }
 
 .textfield input {
@@ -168,6 +165,10 @@ p {
     justify-content: center;
 }
 
+.DontHaveA{
+text-align: center;
+}
+
 #LoginBtn {
     background: linear-gradient(90deg, #9f025E, #F9C929);
     color: white;
@@ -177,3 +178,38 @@ p {
     width: 130px;
     margin-top: 5px;
 }
+
+.SignUpWrapper{
+    width: 80%;
+    max-width: 50%;
+    height: 65%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 24%;
+    margin-right: 24%;
+   
+}
+
+    .textInputsSign{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+.textfieldSign{
+
+    font-size: 16px;
+}
+
+.textfieldSign input{
+
+    width: 55%;
+    height: 20px;
+
+}
+
+
