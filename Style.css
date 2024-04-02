@@ -63,6 +63,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    margin: 0px;
 
 
 }
@@ -211,5 +212,23 @@ text-align: center;
     height: 20px;
 
 }
+
+.wallpaper {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .wallpaperMenu {
+    position: fixed;
+    top: 2px;
+    left: 20px;
+    
+  }
+  
+  .wallpaperMenu button {
+    margin-right: 10px;
+    border-radius: 25%;
+  }
 
 
