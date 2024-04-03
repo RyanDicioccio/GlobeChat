@@ -11,6 +11,7 @@
 
 <body>
 
+    <form id="form" action="http://127.0.0.1:5501/GlobeChat/Chatroom.html" method="get" onsubmit="return validateLogin();">
     <div class="LoginWrapper">
 
         <div class="textfield">
@@ -26,7 +27,7 @@
         </div>
 
         <div class="BTN">
-            <a href="Chatroom.html"><button id="LoginBtn">Login</button></a>
+            <button type="submit" id="LoginBtn">Login</button></a>
         </div>
 
         <!--Refer To This P Tag To Pop Up With A Error If Usernanme Or Passowrd Is Incorrect. -->
@@ -36,7 +37,9 @@
          <h5>Dont have a account? Sign up <a href="SignUp.html">Here!</a></h5>
         </div>
     </div>
+</form>
 
+<script src="./script.js"></script>
 </body>
 
 </html>
