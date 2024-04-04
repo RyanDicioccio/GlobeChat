@@ -269,8 +269,6 @@ text-align: center;
 
   /* Style for messages */
 .message {
-    background-color: #f2f2f2; /* Light gray background */
-    border: 1px solid #ccc; /* Gray border */
     padding: 10px;
     margin: 10px; /* Add some spacing between messages */
     box-sizing: border-box; /* Include padding and border in width calculation */
