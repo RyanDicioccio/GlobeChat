@@ -3,10 +3,10 @@
 
 USE global_chat;
 
-INSERT INTO user (user_name, password, email) VALUES
-('alice', 'password123', 'alice@example.com'),
-('bob', 'pass456', 'bob@example.com'),
-('charlie', 'abc123', 'ineedallaplus@example.com');  -- 这里示例了一个没有邮箱的用户
+INSERT INTO user (user_name, password, email, color) VALUES
+('alice', 'password123', 'alice@example.com', '#004D40'),
+('bob', 'pass456', 'bob@example.com', '#800000'),
+('charlie', 'abc123', 'ineedallaplus@example.com', '#4B0082');
 
 INSERT INTO chats (text, userid) VALUES
 ('Hello, world!', 1),  
