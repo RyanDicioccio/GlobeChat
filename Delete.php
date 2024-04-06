@@ -26,8 +26,8 @@
         </div>
 
         <div class="textfield" class="passwords">
-            <label for="cPass">Confrim Password</label>
-            <input type="text" name="cPass" id="cPass" placeholder="Retype your password">
+            <label for="cPass">Confirm Password</label>
+            <input type="password" name="cPass" id="cPass" placeholder="Retype your password">
             <p id="pUser"></p>
         </div>
 

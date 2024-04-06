@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // if the query returned any rows
     if ($result->num_rows > 0) {
         // fetch if exists
-        $sql2 = "DELETE FROM user WHERE user_name = $login";
+        $sql2 = "DELETE FROM user WHERE user_name = '$login'";
         $conn->query($sql2);
         echo '<script>alert("The user has been deleted.");';
         echo 'window.location.href = "index.php";</script>';
