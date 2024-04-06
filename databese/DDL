@@ -3,12 +3,12 @@ CREATE DATABASE IF NOT EXISTS global_chat;
 
 USE global_chat;
 
-CREATE TABLE IF NOT EXISTS user (
+CREATE TABLE IF NOT EXISTS `user` (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_name VARCHAR(255),
     password VARCHAR(255), 
-    email VARCHAR(255)  NULL
-    color VARCHAR(20) NULL;
+    email VARCHAR(255)  NULL,
+    color VARCHAR(20) NULL
 
 );
 
@@ -18,5 +18,4 @@ CREATE TABLE IF NOT EXISTS chats (
     userid INT,
     FOREIGN KEY (userid) REFERENCES user(id)
 );
-
 
