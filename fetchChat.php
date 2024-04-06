@@ -3,7 +3,7 @@
         include 'connection.php';
 
         $sql = "SELECT u.user_name, c.text, u.color 
-        FROM gc_user u 
+        FROM user u 
         JOIN chats c ON u.id = c.userid;";
         $result = $conn->query($sql);
 

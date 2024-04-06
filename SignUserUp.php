@@ -10,7 +10,7 @@ if (isset($_POST["signup"])) {
     $color = $_POST['color'];
 
     // check if the email already exists
-    $check_query = "SELECT * FROM gc_user WHERE email = '$email'";
+    $check_query = "SELECT * FROM user WHERE email = '$email'";
     $check_result = $conn->query($check_query);
     if ($check_result->num_rows > 0) {
         echo '<script>alert("This email already exists.");</script>';
@@ -18,7 +18,7 @@ if (isset($_POST["signup"])) {
     }
 
     // insert user data
-    $sql = "INSERT INTO gc_user (user_name, password, email, color)
+    $sql = "INSERT INTO user (user_name, password, email, color)
             VALUES ('$login', '$password', '$email', '$color')";
 
     if ($conn->query($sql) === TRUE) {

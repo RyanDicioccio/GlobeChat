@@ -7,12 +7,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $login = $_POST['login'];
     $password = $_POST['pass'];
     // check if the user exists in the database
-    $sql = "SELECT * FROM gc_user WHERE user_name = '$login' AND password = '$password'";
+    $sql = "SELECT * FROM user WHERE user_name = '$login' AND password = '$password'";
     $result = $conn->query($sql);
     // if the query returned any rows
     if ($result->num_rows > 0) {
         // fetch if exists
-        $sql2 = "DELETE FROM gc_user WHERE user_name = $login";
+        $sql2 = "DELETE FROM user WHERE user_name = $login";
         $conn->query($sql2);
         echo '<script>alert("The user has been deleted.");';
         echo 'window.location.href = "index.php";</script>';

@@ -59,21 +59,21 @@ function validateSignUp() {
       check: !emailRegex.test(email),
       element: "pEmail",
       error:
-        "&#10006 Email address should be non-empty with the format xyx@xyz.xyz.",
+        "&#10006 Email address must be in the format abc@abc.abc",
       box: "email",
     },
     {
       check: username === "",
       element: "pUser",
       error:
-        "&#10006 User name cannot be empty",
+        "&#10006 Username cannot be empty",
       box: "login",
     },
     {
       check: !passwordRegex.test(password),
       element: "pPass",
       error:
-        "&#10006 Password should be at least 6 characters: 1 uppercase, 1 lowercase.",
+        "&#10006 Password should be at least 6 characters long with 1 uppercase and 1 lowercase.",
       box: "pass",
     },
     {
@@ -109,33 +109,14 @@ function validateSignUp() {
     return false;
   }
   else{
-    //store variable values in database
     return true;
   }
 }
 
-//PHP: get session username and color
+//create message
 function newMessage() {
   const inputValue = document.getElementById("text").value;
-  const username = "YourUsername"; // Replace "YourUsername" with session username
   const newParagraph = document.createElement("p");
-  newParagraph.textContent = username + ": " + inputValue;
-  newParagraph.style.backgroundColor = "blue"; // replace blue with session color
+  newParagraph.textContent = inputValue;
   document.querySelector(".ChatBox").appendChild(newParagraph);
 }
-
-
-  function deleteAccount() {
-      var username = document.getElementById('login').value;
-      var password = document.getElementById('pass').value;
-      var confirmPassword = document.getElementById('cPass').value;
-
-      if (password !== confirmPassword) {
-        document.getElementById("pUser").innerHTML = "Passwords do not match."; //add error text to p tag
-        document.getElementsByClassName("passwords").style.border = "2px solid red"; //make textbox border red
-          return false;
-      } else {
-        return true;
-      }
-  }
-
