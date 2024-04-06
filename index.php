@@ -23,10 +23,10 @@
 
     <div class="Buttons">
 
-        <form action="signup.html">
+        <form action="signup.php">
             <button type="submit" id="SignUp">Sign Up</button>
         </form>
-        <form action="login.html">
+        <form action="login.php">
             <button type="submit" id="Login">Login</button>
         </form>
 

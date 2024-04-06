@@ -1,0 +1,15 @@
+-- Author: Jia Hong Shih
+-- only for test Data
+
+USE global_chat;
+
+INSERT INTO user (user_name, password, email) VALUES
+('alice', 'password123', 'alice@example.com'),
+('bob', 'pass456', 'bob@example.com'),
+('charlie', 'abc123', 'ineedallaplus@example.com');  -- 这里示例了一个没有邮箱的用户
+
+INSERT INTO chats (text, userid) VALUES
+('Hello, world!', 1),  
+('Nice to meet you.', 2),
+('Welcome!', 1),  
+('How are you?', 3);  

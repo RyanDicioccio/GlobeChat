@@ -28,13 +28,13 @@
 
 
         <div class="ChatBox">
-
+        <?php include 'fetchChat.php'; ?> 
         </div>
 
-        <div id="TextChat">
-            <input type="text" id="text" placeholder="Type your message here">
-            <button onclick="newMessage()">submit</button>
-        </div>
+        <form method="POST" action="fetchMessage.php" id="TextChat">
+            <input type="text" name="mesg" id="text" placeholder="Type your message here">
+            <button name="send" onclick="newMessage()" >submit</button>
+        </form>
 
 
     </div>

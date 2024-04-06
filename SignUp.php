@@ -10,7 +10,7 @@
 
 <body>
 
-    <form id="form" method="get" action="Login.html" onsubmit="return validateSignUp();">
+    <form id="form" method="post" action="SignUserUp.php" onsubmit="return validateSignUp();">
 
     <div class="SignUpWrapper">
 
@@ -48,16 +48,16 @@
 
         <div id="ColorPick">
             <label for="color">Select a user color:</label>
-           <input type="color" id="color">
+           <input type="color" id="color" name="color">
            <p id="pColor"></p>
         </div>
 
         <div class="DontHaveA">
-            <h5>Already have a account? Login <a href="Login.html">Here!</a></h5>
+            <h5>Already have a account? Login <a href="Login.php">Here!</a></h5>
         </div>
 
         <div class="BTN">
-            <button id="LoginBtn" type="submit">SignUp</button>
+            <button id="LoginBtn" name="signup" type="submit">SignUp</button>
         </div>
 
     </div>

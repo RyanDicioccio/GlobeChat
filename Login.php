@@ -11,7 +11,7 @@
 
 <body>
 
-    <form id="form" action="http://127.0.0.1:5501/GlobeChat/Chatroom.html" method="get" onsubmit="return validateLogin();">
+    <form id="form" action="LogUserIn.php" method="post" onsubmit="return validateLogin();">
     <div class="LoginWrapper">
 
         <div class="textfield">
@@ -33,7 +33,7 @@
          <p></p> 
 
          <div class="DontHaveA">
-         <h5>Dont have a account? Sign up <a href="SignUp.html">Here!</a></h5>
+         <h5>Dont have a account? Sign up <a href="SignUp.php">Here!</a></h5>
         </div>
 
         

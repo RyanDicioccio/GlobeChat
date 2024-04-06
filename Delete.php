@@ -10,7 +10,7 @@
 
 <body>
 
-    <form id="deleteaccount" onsubmit="return deleteAccount();">
+    <form id="deleteaccount" method="post" onsubmit="return deleteAccount();" action="DeleteUser.php" >
     <div class="DeleteWrapper">
 
         <div class="textfield">
