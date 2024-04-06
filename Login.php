@@ -38,7 +38,7 @@
 
         
         <div class="DontHaveA">
-            <h5>Unsatisfied with your GlobeChat account? If you wish to remove your account click <a href="Delete.html">here</a></h5>
+            <h5>Unsatisfied with your GlobeChat account? If you wish to remove your account click <a href="Delete.php">here</a></h5>
            </div>
 
 
