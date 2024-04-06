@@ -1,0 +1,15 @@
+-- Author: Jia Hong Shih
+-- only for test Data
+
+USE global_chat;
+
+INSERT INTO user (user_name, password, email, color) VALUES
+('alice', 'password123', 'alice@example.com', '#004D40'),
+('bob', 'pass456', 'bob@example.com', '#800000'),
+('charlie', 'abc123', 'ineedallaplus@example.com', '#4B0082');
+
+INSERT INTO chats (text, userid) VALUES
+('Hello, world!', 1),  
+('Nice to meet you.', 2),
+('Welcome!', 1),  
+('How are you?', 3);  
