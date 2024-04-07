@@ -120,3 +120,21 @@ function newMessage() {
   newParagraph.textContent = inputValue;
   document.querySelector(".ChatBox").appendChild(newParagraph);
 }
+
+function deleteAccount() {
+  document.getElementById("LoginBtn").addEventListener("click", function(event) {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+
+    // Ask the user if they want to continue
+    var confirmation = confirm("Are you sure you want to delete your account?");
+    
+    // If the user confirms, submit the form
+    if (confirmation) {
+        return true;
+    } else {
+        return false;
+        alert("Deletion cancelled!");
+    }
+});
+}
