@@ -1,22 +1,25 @@
+//Author: Nicholas Jacques
+
+//Change backgrounds in chatroom
 function changeWallpaper(imagePath) {
-  document.body.style.backgroundImage = 'url(' + imagePath + ')';
+  document.body.style.backgroundImage = "url(" + imagePath + ")";
 }
 
+//Checks for errors in login form
 function validateLogin() {
   // Get form inputs
   var username = document.getElementById("login").value;
   document.getElementById("login").value = username.toLowerCase();
   let password = document.getElementById("pass").value;
 
-
-  //Array of validations
+  //Array of validations (check if empty)
   const validations = [
     {
-      check: username === "", 
+      check: username === "",
       box: "login",
     },
     {
-      check: password === "", 
+      check: password === "",
       box: "pass",
     },
   ];
@@ -26,20 +29,21 @@ function validateLogin() {
   //run through array
   validations.forEach((validation) => {
     if (validation.check) {
-      document.getElementById("accountcheck").innerHTML = "Please Enter Account details."
+      document.getElementById("accountcheck").innerHTML = "Please Enter Account details."; //do not tell the user if username or password exists
       document.getElementById(validation.box).style.border = "2px solid red"; //make textbox border red
       validForm = false; //return false for each error
     }
   });
 
-  if (!validForm) { //if there are any errors then the form is not valid
+  if (!validForm) {
+    //if there are any errors then the form is not valid
     return false;
-  }
-  else{
+  } else {
     return true;
   }
 }
 
+//checks for erros in signup form
 function validateSignUp() {
   // Get form inputs
   let email = document.getElementById("email").value;
@@ -58,15 +62,13 @@ function validateSignUp() {
     {
       check: !emailRegex.test(email),
       element: "pEmail",
-      error:
-        "&#10006 Email address must be in the format abc@abc.abc",
+      error: "&#10006 Email address must be in the format abc@abc.abc",
       box: "email",
     },
     {
       check: username === "",
       element: "pUser",
-      error:
-        "&#10006 Username cannot be empty",
+      error: "&#10006 Username cannot be empty",
       box: "login",
     },
     {
@@ -98,22 +100,21 @@ function validateSignUp() {
       document.getElementById(validation.element).innerHTML = validation.error; //add error text to p tag
       document.getElementById(validation.box).style.border = "2px solid red"; //make textbox border red
       validForm = false; //return false for each error
-      
     } else {
       document.getElementById(validation.element).innerHTML = ""; // Clear error if it is fixed on resubmit
       document.getElementById(validation.box).style.border = "";
     }
   });
 
-  if (!validForm) { //if there are any errors then the form is not valid
+  if (!validForm) {
+    //if there are any errors then the form is not valid
     return false;
-  }
-  else{
+  } else {
     return true;
   }
 }
 
-//create message
+//create a message in the chatroom on submit
 function newMessage() {
   const inputValue = document.getElementById("text").value;
   const newParagraph = document.createElement("p");
