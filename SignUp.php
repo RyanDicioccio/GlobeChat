@@ -10,6 +10,10 @@
 
 <body>
 
+<div class="MainBtn">
+            <a href="index.php"><Button>Main Menu</Button></a>
+        </div>
+        
     <form id="form" method="post" action="SignUserUp.php" onsubmit="return validateSignUp();">
 
     <div class="SignUpWrapper">
@@ -19,27 +23,27 @@
             <div class="textfieldSign">
                 <label for="Email">Email Address</label>
                 <input type="text" name="email" id="email" placeholder="Type your email">
-                <p id="pEmail"></p>
+                <p id="pEmail" class="error"></p>
 
             </div>
 
             <div class="textfieldSign">
                 <label for="login">User Name</label>
                 <input type="text" name="login" id="login" placeholder="Type your username">
-                <p id="pUser"></p>
+                <p id="pUser" class="error"></p>
             </div>
 
             <div class="textfieldSign">
                 <label for="pass">Password</label>
                 <input type="password" name="pass" id="pass" placeholder="Type your password">
-                <p id="pPass"></p>
+                <p id="pPass" class="error"></p>
             </div>
             
 
             <div class="textfieldSign">
                 <label for="cPass">Confrim Password</label>
                 <input type="text" name="cPass" id="cPass" placeholder="Retype your password">
-                <p id="pCPass"></p>
+                <p id="pCPass" class="error"></p>
             </div>
 
         </div>
@@ -49,7 +53,7 @@
         <div id="ColorPick">
             <label for="color">Select a user color:</label>
            <input type="color" id="color" name="color">
-           <p id="pColor"></p>
+           <p id="pColor" class="error"></p>
         </div>
 
         <div class="DontHaveA">

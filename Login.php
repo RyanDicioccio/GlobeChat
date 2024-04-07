@@ -11,6 +11,10 @@
 
 <body>
 
+<div class="MainBtn">
+            <a href="index.php"><Button>Main Menu</Button></a>
+        </div>
+        
     <form id="form" action="LogUserIn.php" method="post" onsubmit="return validateLogin();">
     <div class="LoginWrapper">
 
@@ -22,7 +26,7 @@
         <div class="textfield">
             <label for="pass">Password</label>
             <input type="password" name="pass" id="pass" placeholder="Type your password">
-            <p id="accountcheck"></p>
+            <p id="accountcheck" class="error"></p>
         </div>
 
         <div class="BTN">
@@ -40,7 +44,6 @@
         <div class="DontHaveA">
             <h5>Unsatisfied with your GlobeChat account? If you wish to remove your account click <a href="Delete.php">here</a></h5>
            </div>
-
 
     </div>
 </form>
