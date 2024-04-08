@@ -1,55 +1,60 @@
+/* Author: Ryan Dicioccio (041111524) */
+
+/* css for the whole html page */
 html {
     height: 100%;
 }
 
+/* importing font */
 .share-tech mono-regular {
     font-family: "Share Tech Mono", monospace;
     font-weight: 400;
     font-style: normal;
 }
 
+/* importing font */
 .merriweather-light {
     font-family: "Merriweather", serif;
     font-weight: 300;
     font-style: normal;
 }
-
+/* importing font */
 .merriweather-regular {
     font-family: "Merriweather", serif;
     font-weight: 400;
     font-style: normal;
 }
-
+/* importing font */
 .merriweather-bold {
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-style: normal;
 }
-
+/* importing font */
 .merriweather-black {
     font-family: "Merriweather", serif;
     font-weight: 900;
     font-style: normal;
 }
-
+/* importing font */
 .merriweather-light-italic {
     font-family: "Merriweather", serif;
     font-weight: 300;
     font-style: italic;
 }
-
+/* importing font */
 .merriweather-regular-italic {
     font-family: "Merriweather", serif;
     font-weight: 400;
     font-style: italic;
 }
-
+/* importing font */
 .merriweather-bold-italic {
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-style: italic;
 }
-
+/* importing font */
 .merriweather-black-italic {
     font-family: "Merriweather", serif;
     font-weight: 900;
@@ -57,6 +62,7 @@ html {
 }
 
 
+/* Css for the background of every pages body */
 body {
     background: linear-gradient(360deg, #9f025E, #F9C929);
     background-size: cover;
@@ -68,6 +74,7 @@ body {
 
 }
 
+/* css for title name on the main menu page */
 .TitleName {
     text-align: center;
     border-radius: 50px;
@@ -80,14 +87,17 @@ body {
 
 }
 
+/* css for h3 on main page */
 h3 {
     font-weight: bold;
 }
 
+/* css for all p tags */
 p {
     font-size: 18px;
 }
 
+/* css styling for the text on the main menu */
 .MainInfo {
     position: sticky;
     overflow: auto;
@@ -101,6 +111,7 @@ p {
 
 }
 
+/* css for buttons on the main menu page. */
 .Buttons {
     position: absolute;
     top: 2%;
@@ -114,6 +125,7 @@ p {
     margin-right: 10px;
 }
 
+/* css for sign up button */
 #SignUp {
     background-color: white;
     color: black;
@@ -123,6 +135,7 @@ p {
     width: 130px;
 }
 
+/* css for login up button */
 #Login {
     background-color: #007FFF;
     color: white;
@@ -133,6 +146,7 @@ p {
     margin-top: 5px;
 }
 
+/* css for the wrapper to hold all login info */
 .LoginWrapper {
     width: 80%;
     max-width: 50%;
@@ -148,6 +162,7 @@ p {
 
 }
 
+/* css for inputs withen the login and delete pages */
 .textfield input {
     display: block;
     padding-bottom: 1%;
@@ -157,19 +172,23 @@ p {
 
 }
 
+/* lable font size in textfeilds */
 .textfield label {
     font-size: 17px;
 }
 
+/* div for log in, signup and delte buttons */
 .BTN {
     display: flex;
     justify-content: center;
 }
 
+/* text to link user to each page if they alredy have an account or need to make one */
 .DontHaveA{
 text-align: center;
 }
 
+/* Style for all login, signup and delete button */
 #LoginBtn {
     background: linear-gradient(90deg, #9f025E, #F9C929);
     color: white;
@@ -180,6 +199,7 @@ text-align: center;
     margin-top: 5px;
 }
 
+/* css for the div to hold all the info needed for the sign up page. */
 .SignUpWrapper{
     width: 80%;
     max-width: 50%;
@@ -196,12 +216,12 @@ text-align: center;
    
 }
 
-
+/* same as other textfeild just smaller font */
 .textfieldSign{
 
     font-size: 16px;
 }
-
+/* same as other textfeild just smaller size */
 .textfieldSign input{
 
     width: 55%;
@@ -209,31 +229,35 @@ text-align: center;
 
 }
 
+/* wallaper div so user can change the wallpaper on there chat page */
 .wallpaper {
     height: 100vh;
     background-size: cover;
     background-position: center;
   }
 
-
-  
+/* 
+  div to hold all the buttons to change wallpaper */
   .wallpaperMenu {
     position: fixed;
     top: 2px;
     left: 20px;
     
   }
-  
+/*   
+  css for all the change wallaper buttons */
   .wallpaperMenu button {
     margin-right: 10px;
     border-radius: 25%;
     border: none;
   }
 
+  /* css for all h4 elements (chats on the chatpage) */
   h4{
     color: white;
   }
 
+  /* div for the border of the ChatBox */
   .ChatWrapper{
 
     width: 100%;
@@ -242,6 +266,7 @@ text-align: center;
 
   }
 
+  /* chatbox styling to make it look good and fill most of the screen. */
   .ChatBox{
 
     position: fixed;
@@ -255,6 +280,7 @@ text-align: center;
     
   }
 
+  /* css input for the user to type into */
   #TextChat{
     position: fixed;
     bottom: 0;
@@ -269,15 +295,14 @@ text-align: center;
 
   /* Style for messages */
 .message {
-    background-color: #f2f2f2; /* Light gray background */
-    border: 1px solid #ccc; /* Gray border */
     padding: 10px;
-    margin: 10px; /* Add some spacing between messages */
-    box-sizing: border-box; /* Include padding and border in width calculation */
-    display: block; /* Display as inline block */
+    margin: 10px; 
+    box-sizing: border-box; 
+    display: block; 
 }
 
 
+/* css for the div to hold all the info needed for the delete page. */
   .DeleteWrapper{
 
     width: 80%;
@@ -293,11 +318,42 @@ text-align: center;
     margin-right: 24%;
   }
 
+/* css for the warning text on the delete page */
   #WarningMSG{
     color: red;
     font-weight: bold;
     font-size: 16px;
   }
+
+/* div to put the button in the top right rather then the left on the chatbox page. */
+  .wallpaper .MainBtn{
+    display: flex;
+    justify-content:right;
+    margin: 10px;
+    
+  }
+
+  /* css to add a margin on the button on all pages. */
+  .MainBtn{
+    margin: 15px;
+  }
+
+  /* styling for the main menu return button on all pages */
+  .BtnMain{
+    background-color: none;
+    color: black;
+    border: black solid 2px;
+    border-radius: 10%;
+    height: 37px;
+    width: 100px;
+    font-family: "Share Tech Mono", monospace;
+  }
+
+  /* error text css */
+  .error{
+    color: red;
+    font-size: .9em;
+}
 
 
 

@@ -1,33 +1,94 @@
+//Author: Nicholas Jacques
+
+//Change backgrounds in chatroom
 function changeWallpaper(imagePath) {
-  document.body.style.backgroundImage = 'url(' + imagePath + ')';
+  document.body.style.backgroundImage = "url(" + imagePath + ")";
 }
 
+//Checks for errors in login form
 function validateLogin() {
   // Get form inputs
   var username = document.getElementById("login").value;
   document.getElementById("login").value = username.toLowerCase();
   let password = document.getElementById("pass").value;
 
+  //Array of validations (check if empty)
+  const validations = [
+    {
+      check: username === "",
+      box: "login",
+    },
+    {
+      check: password === "",
+      box: "pass",
+    },
+  ];
+
+  let validForm = true;
+
+  //run through array
+  validations.forEach((validation) => {
+    if (validation.check) {
+      document.getElementById("accountcheck").innerHTML = "Please Enter Account details."; //do not tell the user if username or password exists
+      document.getElementById(validation.box).style.border = "2px solid red"; //make textbox border red
+      validForm = false; //return false for each error
+    }
+  });
+
+  if (!validForm) {
+    //if there are any errors then the form is not valid
+    return false;
+  } else {
+    return true;
+  }
+}
+
+//checks for erros in signup form
+function validateSignUp() {
+  // Get form inputs
+  let email = document.getElementById("email").value;
+  var username = document.getElementById("login").value;
+  document.getElementById("login").value = username.toLowerCase();
+  let password = document.getElementById("pass").value;
+  let retypePassword = document.getElementById("cPass").value;
+  let color = document.getElementById("color").value;
 
   // Regular expressions for validation
-  let usernameRegex = /^.{1,20}$/;
+  let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   let passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
 
   //Array of validations
   const validations = [
     {
-      check: !usernameRegex.test(username),
+      check: !emailRegex.test(email),
+      element: "pEmail",
+      error: "&#10006 Email address must be in the format abc@abc.abc",
+      box: "email",
+    },
+    {
+      check: username === "",
       element: "pUser",
-      error:
-        "&#10006 User name should be non-empty, and within 20 characters long.",
+      error: "&#10006 Username cannot be empty",
       box: "login",
     },
     {
       check: !passwordRegex.test(password),
       element: "pPass",
       error:
-        "&#10006 Password should be at least 6 characters: 1 uppercase, 1 lowercase.",
+        "&#10006 Password should be at least 6 characters long with 1 uppercase and 1 lowercase.",
       box: "pass",
+    },
+    {
+      check: (password !== retypePassword) | !passwordRegex.test(password),
+      element: "pCPass",
+      error: "&#10006 Please retype password.",
+      box: "cPass",
+    },
+    {
+      check: color == "#000000",
+      element: "pColor",
+      error: "&#10006 Message color cannot be black.",
+      box: "color",
     },
   ];
 
@@ -45,23 +106,18 @@ function validateLogin() {
     }
   });
 
-  if (!validForm) { //if there are any errors then the form is not valid
+  if (!validForm) {
+    //if there are any errors then the form is not valid
     return false;
-  }
-  else{
+  } else {
     return true;
   }
 }
 
-
-
+//create a message in the chatroom on submit
 function newMessage() {
   const inputValue = document.getElementById("text").value;
   const newParagraph = document.createElement("p");
   newParagraph.textContent = inputValue;
-  newParagraph.classList.add("message"); //all messages are part of class message for css
   document.querySelector(".ChatBox").appendChild(newParagraph);
 }
-
-
-
