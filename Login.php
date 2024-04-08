@@ -12,12 +12,19 @@
 
 <body>
 
+<<<<<<< HEAD
     <!-- div to hold button to bring user back to the main menu. -->
 <div class="MainBtn">
             <a href="index.php" ><Button class="BtnMain">Main Menu</Button></a>
         </div>
         
         <!-- Validator for the login -->
+=======
+<div class="MainBtn">
+            <a href="index.php"><Button>Main Menu</Button></a>
+        </div>
+        
+>>>>>>> 5f360fee53b18f8329524258b4c7c574860919d9
     <form id="form" action="LogUserIn.php" method="post" onsubmit="return validateLogin();">
 
         <!-- Div to hold all textfeilds for the login page. -->

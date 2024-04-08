@@ -333,6 +333,7 @@ text-align: center;
     
   }
 
+<<<<<<< HEAD
   /* css to add a margin on the button on all pages. */
   .MainBtn{
     margin: 15px;
@@ -350,6 +351,8 @@ text-align: center;
   }
 
   /* error text css */
+=======
+>>>>>>> 5f360fee53b18f8329524258b4c7c574860919d9
   .error{
     color: red;
     font-size: .9em;
